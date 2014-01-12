@@ -71,7 +71,7 @@ cd postgresql-9.3.2
 make world
 make install-world
 cd ..
-rm -rf postgresql-9.2.4*
+rm -rf postgresql-9.3.2*
 
 # Initialize postgres DB
 useradd -p postgres postgres
