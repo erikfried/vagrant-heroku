@@ -64,9 +64,9 @@ echo "export WORKON_HOME=/home/vagrant/.virtualenvs" >> /home/vagrant/.bashrc
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> /home/vagrant/.bashrc
 
 # Install PostgreSQL 9.2.4
-wget http://ftp.postgresql.org/pub/source/v9.2.4/postgresql-9.2.4.tar.bz2
-tar jxf postgresql-9.2.4.tar.bz2
-cd postgresql-9.2.4
+wget http://ftp.postgresql.org/pub/source/v9.3.2/postgresql-9.3.2.tar.bz2
+tar jxf postgresql-9.3.2.tar.bz2
+cd postgresql-9.3.2
 ./configure --prefix=/usr
 make world
 make install-world
@@ -91,7 +91,7 @@ echo "su -c '/usr/bin/pg_ctl start -l /var/pgsql/data/log/logfile -D /var/pgsql/
 # Install NodeJs for a JavaScript runtime
 git clone https://github.com/joyent/node.git
 cd node
-git checkout v0.4.7
+git checkout v0.10.24
 ./configure --prefix=/usr
 make
 make install
